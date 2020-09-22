@@ -1,0 +1,375 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<main>
+ <header>
+  <div id="logo"><a href=www.bitterandesters.com><img src="https://cdn.shopify.com/s/files/1/1260/1871/files/Asset_3_ccb36df7-6ffb-4638-afe6-49fb1293b845_360x.png?v=1592230706"></a>
+    </div>  
+  <h1 id="title">Webstore Improvment Survey</h1>
+ 
+  
+ </header>
+   <div class="container">  
+    
+    <p id="description">Thank you for taking the time to help us improve our website.</p>
+  
+  <form action="#" id="survey-form">
+    <div class="form-group">
+      <label id="name-label" class="label" for="name">Name:</label>
+      <input 
+             type="text" 
+             id="name" 
+             name="name"
+             placeholder="Enter your name (required)"
+             class="input-control"
+             required
+           >
+      </div>
+    <div class="form-group">
+      <label id="email-label" class="label" for="email">Email:</label>
+      <input 
+             type="email" 
+             id="email" 
+             name="email"
+             placeholder="Enter your email (required)"
+             class="input-control"
+             required
+           >
+      </div>
+    <div class="form-group">
+      <label id="number-label" class="label" for="age">Age:</label>
+      <input 
+             type="number"
+             id="number"
+             name="age"
+             placeholder="Age 21+"
+             class="input-control"
+             min="21"
+             max="99"
+            
+           >
+      </div>
+    <div class="form-group">
+      <label id="zipcode-label" class="label" for="zipcode">Zipcode:</label>
+      <input 
+             type="text" 
+             id="zipcode" 
+             name="zipcode"
+             pattern="(\d{5}([\-]\d{4})?)"
+             placeholder="Enter your zipcode (required)"
+             class="input-control"
+             required 
+           >
+      </div>
+   
+    <div class="form-group dropdown-group">
+      <label id="drink-pref-label" class="label" for="drink-pref">My typical brew style:</label>
+      <select id="dropdown" name="brew-pref" class="input-control">
+        <option value="Extract">Extract</option>
+        <option value="AG-multi vessel">All Grain - "Multi vessel"</option>
+        <option value="AG-BIAB">All grain - "Brew in a Bag"</option>
+        <option value="Partial Mash">Partial Mash</option>
+        <option value="Mix it up">I Mix it up, All Grain & Extract</option>
+        <option value="Wine">I make wine/fruit wine</option>
+        <option value="non-beer/wine">I make kombucha, kefer, or soemthing else</option>
+        <option value="I dont know">I dont understand</option>
+      </select>
+    </div>
+    
+    <div class="form-group dropdown-group">
+      <label id="size-pref-label" class="label" for="size-pref">My typical brew size:</label>
+      <select id="dropdown" name="size-pref" class="input-control">
+        <option value="1 Gallon">1 Gallon</option>
+        <option value="2-4 Gallon">2-4 Gallons</option>
+        <option value="5-6 Gallons">5-6 Gallons </option>
+        <option value="6+ Gallon">6+ Gallons</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+  
+
+    <div class="form-group" id="retail-pref-container">
+      <p>How do you typically buy homebrew supplies? </p>
+        <label class="radio-label">
+          <input 
+                 type="radio" 
+                 class="input-radio" 
+                 id="bitter-esters-instore" 
+                 name="retail-pref" 
+                 value="bitter-esters-instore"
+                 ><span class="radio-span"></span
+               >In store at Bitter & Esters (during normal times)</label
+          >
+        <label class="radio-label">
+          <input 
+                 type="radio" 
+                 class="input-radio"
+                 id="online-be-pickup" 
+                 name="retail-pref" 
+                 value="Online-BE-pickup"
+                 ><span class="radio-span"></span
+               >Online at Bitterandesters.com for pickup</label
+          >
+        <label class="radio-label">
+          <input 
+                 type="radio" 
+                 class="input-radio" 
+                 id="online-be-delivery" 
+                 name="retail-pref" 
+                 value="online-BE-delivery"
+                ><span class="radio-span"></span
+               >Online at Bitterandesters.com for delivery</label
+          >
+        <label class="radio-label">
+          <input 
+                 type="radio" 
+                 class="input-radio"
+                 id="lhbs-notbe" 
+                 name="retail-pref" 
+                 value="LHBS-NOTBE"
+                ><span class="radio-span"></span
+               >A different Local Homebrew shop</label
+          >
+        <label class="radio-label">
+          <input 
+                 type="radio" 
+                 class="input-radio"
+                 id="online-notbe" 
+                 name="retail-pref" 
+                 value="online-notBE"
+                ><span class="radio-span"></span
+               >Online NOT at Bitterandesters.com</label
+          >
+        <label class="radio-label">
+          <input 
+                 type="radio" 
+                 class="input-radio"
+                 id="other-retail" 
+                 name="retail-pref" 
+                 value="other"
+                ><span class="radio-span"></span
+               >Other</label
+          >
+      </div>
+       
+    <div class="form-group dropdown-group">
+      <label id="size-pref-label" class="label" for="size-pref">How did you find Bitter & Esters?</label>
+      <select id="dropdown" name="size-pref" class="input-control">
+        <option value="LHBS">It's My local Homebrew Shop/Word of mouth</option>
+        <option value="foot traffic">I was walking by one day...</option>
+        <option value="publication">Publication, Zymurgy, BYO, etc.</option>
+        <option value="Google Search">I searched on Google</option>
+        <option value="Google Shopping">Google Shopping</option>
+        <option value="Social Media">Social Media</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+       
+    <div class="form-group" id="dowell-containter">
+       <p>At Bitter & Esters what do we do well?<span>(select all that apply):</span></p>
+       
+         <label class="checkbox-label">
+           <input
+                  type="checkbox"
+                  class="input-checkbox"
+                  id="dowell-selection"
+                  name="dowell"
+                  value="Selection"
+                 ><span class="check-span"></span
+               >Inventory Selection</label
+           >
+         <label class="checkbox-label">
+           <input
+                  type="checkbox"
+                  class="input-checkbox"
+                  id="dowell-pricing"
+                  name="dowell"
+                  value="Pricing"
+                 ><span class="check-span"></span
+               >Competitive Pricing</label
+          >
+         <label class="checkbox-label">
+           <input
+                  type="checkbox"
+                  class="input-checkbox"
+                  id="dowell-service"
+                  name="dowell"
+                  value="Pricing"
+                 ><span class="check-span"></span
+               >Customer Service</label
+          >
+         <label class="checkbox-label">
+             <input
+                    type="checkbox"
+                    class="input-checkbox"
+                    id="dowell-webstore"
+                    name="dowell"
+                    value="Pricing"
+                   ><span class="check-span"></span
+               >Webstore ease-of-use</label
+            >
+           </label>
+           <label class="checkbox-label">
+             <input
+                    type="checkbox"
+                    class="input-checkbox"
+                    id="dowell-classes"
+                    name="dowell"
+                    value="Pricing"
+                   ><span class="check-span"></span
+                 >Classes</label
+            >
+           <label class="checkbox-label">
+             <input
+                    type="checkbox"
+                    class="input-checkbox"
+                    id="dowell-resources"
+                    name="dowell"
+                    value="Resources"
+                   ><span class="check-span"></span
+                 >Brewing Resources</label
+            >
+        <label class="checkbox-label">
+             <input
+                    type="checkbox"
+                    class="input-checkbox"
+                    id="dowell-recipies"
+                    name="dowell"
+                    value="Recipies"
+                   ><span class="check-span"></span
+                 >Beer Recipies</label
+            >
+        <label class="checkbox-label">
+             <input
+                    type="checkbox"
+                    class="input-checkbox"
+                    id="dowell-shipping-quality"
+                    name="dowell"
+                    value="Shipping Quality"
+                   ><span class="check-span"></span
+                 >Shipping Quality</label
+            >
+        <label class="checkbox-label">
+            <input
+                    type="checkbox"
+                    class="input-checkbox"
+                    id="dowell-shipping-pricing"
+                    name="dowell"
+                    value="Shipping Pricing"
+                   ><span class="check-span"></span
+                 >Shipping Pricing</label
+            >
+        </div> 
+  
+    <div class="form-group" id="improve-containter">
+       <p>At Bitter & Esters how can we most improve?<span>(select all that apply):</span></p>
+       
+         <label class="checkbox-label">
+           <input
+                  type="checkbox"
+                  class="input-checkbox"
+                  id="improve-selection"
+                  name="improve"
+                  value="Selection"
+                 ><span class="check-span"></span
+               >Inventory Selection</label
+           >
+         <label class="checkbox-label">
+           <input
+                  type="checkbox"
+                  class="input-checkbox"
+                  id="improve-pricing"
+                  name="improve"
+                  value="Pricing"
+                 ><span class="check-span"></span
+               >Competitive Pricing</label
+          >
+         <label class="checkbox-label">
+           <input
+                  type="checkbox"
+                  class="input-checkbox"
+                  id="improve-service"
+                  name="improve"
+                  value="Pricing"
+                 ><span class="check-span"></span
+               >Customer Service</label
+          >
+         <label class="checkbox-label">
+             <input
+                    type="checkbox"
+                    class="input-checkbox"
+                    id="improve-webstore"
+                    name="improve"
+                    value="Pricing"
+                   ><span class="check-span"></span
+               >Webstore ease-of-use</label
+            >
+           </label>
+           <label class="checkbox-label">
+             <input
+                    type="checkbox"
+                    class="input-checkbox"
+                    id="improve-classes"
+                    name="improve"
+                    value="Pricing"
+                   ><span class="check-span"></span
+               >Classes</label
+            >
+           <label class="checkbox-label">
+             <input
+                    type="checkbox"
+                    class="input-checkbox"
+                    id="improve-resources"
+                    name="improve"
+                    value="Resources"
+                   ><span class="check-span"></span
+               >Brewing Resources</label
+            >
+     <label class="checkbox-label">
+            <input
+                    type="checkbox"
+                    class="input-checkbox"
+                    id="improve-recipies"
+                    name="improve"
+                    value="Recipies"
+                   ><span class="check-span"></span
+               >Beer Recipies</label
+            >
+      <label class="checkbox-label">
+             <input
+                    type="checkbox"
+                    class="input-checkbox"
+                    id="improve-shipping-quality"
+                    name="improve"
+                    value="Shipping Quality"
+                   ><span class="check-span"></span
+               >Shipping Quality</label
+            >
+       <label class="checkbox-label">
+             <input
+                    type="checkbox"
+                    class="input-checkbox"
+                    id="improve-shipping-pricing"
+                    name="improve"
+                    value="Shipping Pricing"
+                   ><span class="check-span"></span
+               >Shipping Pricing</label
+            >
+        </div> 
+    
+    <div id="text-area-container">
+        <textarea  id="text-area" rows="3" cols="45">Please, Add detail on how we can improve.   </textarea>
+      </div>
+        
+    <div  id="text-area-container"> 
+        <textarea id="text-area" rows="5" cols="45" >any additional comments here</textarea>
+      </div> 
+    
+    <div class="button-container">
+       <input class="button" id="reset" type="reset">
+       <input class="button" id="submit" type="submit">
+      </div>
+
+  </form>
+</div>
+</main>
+
